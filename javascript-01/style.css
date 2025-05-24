@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgb(0, 255, 255),
+        0 0 20px rgb(0, 255, 255),
+        0 0 40px rgb(0, 255, 255),
+        0 0 50px rgb(0, 255, 255),
+        0 0 60px rgb(0, 255, 255),
+        0 0 30px rgb(0, 255, 255),
+        0 0 80px rgb(0, 255, 255);
+    font-size: 50px;
+    transition: all 0.5s ease;
+}
+
+.main:hover {
+    transform: scale(1.2);
+    color: blue;
+    cursor: pointer;
+    text-shadow: 0 0 10px yellow,
+        0 0 20px yellow,
+        0 0 40px yellow,
+        0 0 50px yellow,
+        0 0 60px yellow,
+        0 0 70px yellow,
+        0 0 80px yellow;
+}
+
+.btn {
+    color: rgb(0, 0255, 255);
+    box-shadow: 0 0 10px rgb(0, 255, 255),
+        0 0 20px rgb(0, 255, 255),
+        0 0 40px rgb(0, 255, 255),
+        0 0 50px rgb(0, 255, 255);
+    background-color: rgb(60, 0, 255);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 5px solid rgb(0, 255, 0);
+    border-radius: 50px 5px;
+    margin-top: 25px;
+    transition: all 1s ease;
+    /* transition: width 5s; */
+}
+
+
+.btn:hover{
+    width: 300px;
+    
+}
+
+a:hover .btn {
+    color: black;
+    text-shadow: 0 0 10px yellow,
+        0 0 20px yellow,
+        0 0 40px yellow,
+        0 0 50px yellow,
+        0 0 60px yellow;
+    box-shadow: 0 0 10px yellow,
+        0 0 20px yellow,
+        0 0 40px yellow;
+    background-color: rgb(255, 255, 0);
+    border: 3px solid whitesmoke;
+    transform: perspective(1000px) rotateY(45deg);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    transition: all 1s ease;
+    
+}
+.btn-back {
+    color: rgb(0, 0255, 255);
+    box-shadow: 0 0 10px rgb(0, 255, 255),
+        0 0 20px rgb(0, 255, 255),
+        0 0 40px rgb(0, 255, 255),
+        0 0 50px rgb(0, 255, 255);
+    background-color: rgb(60, 0, 255);
+    font-size: 15px;
+    weight: 500px !important;
+    padding: 10px 20px;
+    border: 5px solid rgb(0, 255, 0);
+    border-radius: 50px 5px;
+    margin-top: 25px;
+    transition: all 1s ease;
+}
+
+.btn-back:hover {
+    border: 3px solid yellow;
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.2);
+    transition: all 1s ease;
+    color: whitesmoke;
+    text-shadow: 0 0 10px whitesmoke,
+        0 0 20px whitesmoke,
+        0 0 40px whitesmoke,
+        0 0 50px whitesmoke,
+        0 0 60px whitesmoke;
+        width: 300px;
+} 
+.btn-5{
+   margin-top: 10px;
+   color: rgb(0, 0255, 255);
+   box-shadow: 0 0 10px rgb(0, 255, 255),
+       0 0 20px rgb(0, 255, 255),
+       0 0 40px rgb(0, 255, 255),
+       0 0 50px rgb(0, 255, 255);
+   background-color: rgb(60, 0, 255);
+   font-size: 15px;
+   font-weight: 100px;
+   padding: 8px 10px;
+   border: 5px solid rgb(0, 255, 0);
+   border-radius: 50px 5px;
+   transition: all 1s ease;
+}
+.btn-5:hover{
+   /* border: 3px solid yellow;
+   background-color: rgb(255, 0, 0);
+   transform: scale(1.2);
+   transition: all 1s ease;
+   color: whitesmoke;
+   text-shadow: 0 0 10px whitesmoke,
+       0 0 20px whitesmoke,
+       0 0 40px whitesmoke,
+       0 0 50px whitesmoke,
+       0 0 60px whitesmoke;
+       width: 300px; */
+       color: black;
+       text-shadow: 0 0 10px yellow,
+           0 0 20px yellow,
+           0 0 40px yellow,
+           0 0 50px yellow,
+           0 0 60px yellow;
+       box-shadow: 0 0 10px yellow,
+           0 0 20px yellow,
+           0 0 40px yellow;
+       background-color: rgb(255, 255, 0);
+       border: 3px solid whitesmoke;
+       transform: perspective(1000px) scalex(1.5);
+       cursor: pointer;
+}
