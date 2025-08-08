@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        /* body {
+             background: black; */
+        /* color: white;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="grid grid-cols-12 gap-3">
+        <div class="col-span-2 space-y-2  p-3">
+            <div class="bg-slate-600 text-white rounded-md py-2 px-4 shadow-lg">
+                <h3 class="font-bold"> Category Filter</h3>
+
+                <div class="mt-3 space-y-2" id="categoryFilter">
+
+                </div>
+            </div>
+            <div class="bg-slate-600 text-white rounded-md py-2 px-4 shadow-lg">
+                <h3 class="font-bold"> Pricing Filter</h3>
+<div class="flex flex-col space-y-2" id="priceFilter"></div>
+                <div class="mt-3 space-y-2" id="categoryFilter">
+                    <div class="w-full">
+
+                        <!-- <input type="range" class="w-full" name="" id="" max="100" min="0">
+                        <div class="flex justify-between">
+                            <span>0</span>
+                            <span>100</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-600 text-white rounded-md py-2 px-4 shadow-lg">
+                <h3 class="font-bold"> Rating Filter</h3>
+
+                <div class="mt-3 space-y-2" id="ratingFilter">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-10 ">
+            <div class="grid grid-cols-12 gap-3" id="productsGrid">
+                <!-- <div class="col-span-3 rounded-md bg-slate-600 text-white ">
+                    <div>
+                        <img src="./images/products/burger.jpg" class="object-cover rounded-t-md " alt="">
+                    </div>
+                    <div class="p-3">
+                        <h3 class="text-2xl">Burger</h3>
+                        <p>****** <span> 5</span></p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, deleniti.</p>
+                        <div class="flex justify-between">
+                            <span>100</span>
+                            <span>i</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
