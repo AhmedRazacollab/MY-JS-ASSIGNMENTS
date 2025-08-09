@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="grid grid-cols-12 gap-3">
+        <div class="col-span-2 space-y-2  p-3">
+            <div class="bg-slate-600 text-white rounded-md py-2 px-4 shadow-lg">
+                <h3 class="font-bold"> Category Filter</h3>
+                <div class="mt-3 space-y-2" id="categoryFilter">
+                </div>
+            </div>
+            <div class="bg-slate-600 text-white rounded-md py-2 px-4 shadow-lg">
+                <h3 class="font-bold"> Pricing Filter</h3>
+<div class="flex flex-col space-y-2" id="priceFilter"></div>
+                <div class="mt-3 space-y-2" id="categoryFilter">
+                    <div class="w-full">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-600 text-white rounded-md py-2 px-4 shadow-lg">
+                <h3 class="font-bold"> Rating Filter</h3>
+                <div class="mt-3 space-y-2" id="ratingFilter">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-10 ">
+            <div class="grid grid-cols-12 gap-3" id="productsGrid">
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
