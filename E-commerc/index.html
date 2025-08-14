@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Marketplace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Ahmed`s-Shop</span>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+`
+    <div class="container">
+        <div class="main-content">
+            <div class="filters-section">
+                <div class="section-title">
+                    <h2>Filters</h2>
+                    <button id="clear-all">Clear All</button>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Categories</h3>
+                    <div class="filter-options" id="category-filters">
+                        <div class="option">
+                            <input type="checkbox" id="electronics" value="Electronics">
+                            <label for="electronics">Electronics</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="clothing" value="Clothing">
+                            <label for="clothing">Clothing</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="home" value="Home & Kitchen">
+                            <label for="home">Home & Kitchen</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="beauty" value="Beauty">
+                            <label for="beauty">Beauty</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="sports" value="Sports">
+                            <label for="sports">Sports</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="range-inputs">
+                        <input type="number" id="min-price" placeholder="Min" min="0">
+                        <input type="number" id="max-price" placeholder="Max" min="0">
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Minimum Rating</h3>
+                    <div class="rating-stars" id="rating-filter">
+                        <div class="star" data-rating="1"><i class="fas fa-star"></i></div>
+                        <div class="star" data-rating="2"><i class="fas fa-star"></i></div>
+                        <div class="star" data-rating="3"><i class="fas fa-star"></i></div>
+                        <div class="star" data-rating="4"><i class="fas fa-star"></i></div>
+                        <div class="star" data-rating="5"><i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="products-section">
+                <div class="controls-row">
+                    <div class="filter-chips" id="filter-chips">
+                        <!-- Filter chips will be added here dynamically -->
+                    </div>
+                    
+                    <div class="sort-options">
+                        <span>Sort by:</span>
+                        <select id="sort-select">
+                            <option value="default">Featured</option>
+                            <option value="price_asc">Price: Low to High</option>
+                            <option value="price_desc">Price: High to Low</option>
+                            <option value="rating_asc">Rating: Low to High</option>
+                            <option value="rating_desc">Rating: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded here -->
+                </div>
+                
+                <div class="pagination" id="pagination">
+                    <!-- Pagination controls will be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
